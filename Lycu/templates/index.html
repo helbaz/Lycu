@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Prueba</title>
+</head>
+<body>
+    <h1>Curiositats</h1><br>
+    {% for curiositat in curiositats %}
+        <h4>{{ curiositat.titol }}</h4>
+        {% block content %}
+            <img style="width: 10%; height: auto" src="{{ curiositat.imatge.url }}">
+        {% endblock %}
+        <p>{{ curiositat.contingut }}</p>
+    {% endfor %}
+</body>
+</html>
