@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <meta charset="UTF-8">
         
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -35,6 +36,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Quisom.html">Qui som?</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="IniciaSessi%C3%B3.html">Benvingut</a>
                     </li>
                 </ul>
                 
@@ -80,13 +86,18 @@
 					</div>
                     <hr> <!-- Linia -->
 				<div class="panel-body"> 
-							<div class="col-lg-12 inicisesioitems">
+							<div class="col-lg-5 inicisesioitems">
 								<form id="login-form" method="post" role="form" style="display: block;">
-                                    <div class="form-group text-center">
+                                    <div class="form-group text-center row contentselect">
                                         <p class="cat">Selecciona la categoria de la teva curiositat</p>
-                                        <select class="form-control">
-  <option>Default select</option>
-</select>
+                                        <select class="form-control col-lg-10">
+                                            <option selected></option>
+                                            <option></option>
+                                        </select>
+                                        <div class="col-lg-1 divimg">
+                                            <img src="Images/plusgreen.png" class="plusgreen">
+                                        </div>
+                                        
 				                    </div>
 								</form>
 							</div>
