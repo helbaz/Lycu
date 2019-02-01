@@ -10,4 +10,4 @@ from .models import *
 def index(request):
     curiositats = Curiositat.objects.all()
     context = {'curiositats': curiositats}
-    return render(request, 'index.html', context)
+    return render(request, 'Index.html', context)

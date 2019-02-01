@@ -22,6 +22,6 @@ from LycuMain import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index', views.index, name='Index'),
+    url(r'^$', views.index, name='Index'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
