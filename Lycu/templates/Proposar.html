@@ -12,6 +12,8 @@
         
         <link rel="stylesheet" type="text/css" href="Proposar.css">
         
+        <script src="Proposar.js"></script>
+        
     </head>
 
     <body>
@@ -94,13 +96,26 @@
                                             <option selected></option>
                                             <option></option>
                                         </select>
-                                        <div class="col-lg-1 divimg">
+                                        <div class="col-lg-1 divimg" onclick="proposar()">
                                             <img src="Images/plusgreen.png" class="plusgreen">
                                         </div>
                                         
 				                    </div>
 								</form>
 							</div>
+                    <div class="col-lg-5 inicisesioitems js">
+								<form id="login-form" method="post" role="form" style="display: block;">
+                                    <div class="form-group text-center row contentselect">
+                                        <p class="cat">Afegeix la nova categoria</p>
+                                        <input class="form-control col-lg-10">
+                                        <div class="col-lg-1 botoafegir">
+                                            <button type="button" class="btn btn-light">Afegir</button>
+                                        </div>
+                                        
+				                    </div>
+								</form>
+                    </div>
+                    
 					</div>
                 </div>
 			</div>

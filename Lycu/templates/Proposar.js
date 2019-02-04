@@ -1,0 +1,3 @@
+function proposar(){
+    $(".js").show();
+}
