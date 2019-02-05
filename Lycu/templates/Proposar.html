@@ -76,12 +76,12 @@
                                     <div class="container">
                                         <form>
                                             <div class="form-group">
-                                                <textarea class="form-control text" rows="5" id="textcuriositat" placeholder="Escriu la teva curiositat ..."></textarea>
+                                                <textarea rows="5" id="textcuriositat"></textarea>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="form-group text-center">
-                                        <input type="file" class="btn btn-light iniciarsessiobutton" value="Adjunta la teva imtage">
+                                        <input id="selectorimage" type="file">
 				                    </div>
 								</form>
 							</div>
@@ -92,7 +92,7 @@
 								<form id="login-form" method="post" role="form" style="display: block;">
                                     <div class="form-group text-center row contentselect">
                                         <p class="cat">Selecciona la categoria de la teva curiositat</p>
-                                        <select class="form-control col-lg-10">
+                                        <select id="selecciona">
                                             <option selected></option>
                                             <option></option>
                                         </select>
@@ -107,7 +107,7 @@
 								<form id="login-form" method="post" role="form" style="display: block;">
                                     <div class="form-group text-center row contentselect">
                                         <p class="cat">Afegeix la nova categoria</p>
-                                        <input class="form-control col-lg-10">
+                                        <input id="novacategoria">
                                         <div class="col-lg-1 botoafegir">
                                             <button type="button" class="btn btn-light">Afegir</button>
                                         </div>

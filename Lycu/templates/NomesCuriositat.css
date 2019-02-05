@@ -390,8 +390,8 @@ td{
     width: 75%;
 }
 p{
-    text-align: justify;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-align: left;
     font-family: "text";
-    font-size: 20px;
 }
 }

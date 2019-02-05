@@ -1,0 +1,15 @@
+Registra
+	-id="Email"
+	-id="Usuari"
+	-id="password"
+	
+Iniciar Sessió
+	-id="username"
+	-id="password"
+	
+Propossar
+	-id="textcuriositat"
+	-id="selectorimage"
+	-id="selecciona"
+	-id="novacategoria"
+	
