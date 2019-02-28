@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../media/Bibliotecav2.css">
+
+</head>
+
+<body>
+
+
+<!-- ---------------------------------------NAV------------------------------------ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="textnav">
+    <a class="navbar-brand" href="{% url 'Index' %}"><img src="../media/Images/Lycu%20blue.png" id="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'Index' %}">Inici <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <ion-icon src="IKONS/_ionicons_svg_md-trophy.svg"></ion-icon>
+                <a class="nav-link"
+                   href="#">Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'biblioteca' %}">Biblioteca</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Qui som?</a>
+            </li>
+        </ul>
+        {% if  nom_usuari %}
+            <a class="nav-link btn btn-danger" href="{% url 'publicar' %}">Publicar</a>
+            <ul class="navbar-nav md-auto">
+                <li class="nav-item">
+                    <em class="nav-link">Benvingut {{ nom_usuari }}</em>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'sortir' %}">Tancar sessió</a>
+                </li>
+            </ul>
+        {% else %}
+            <ul class="navbar-nav md-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Inicia sessió</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'registre' %}">Crear un compte</a>
+                </li>
+            </ul>
+        {% endif %}
+    </div>
+</nav>
+
+<!-- ---------------------------------------BODY------------------------------------ -->
+
+
+<!-- -----Inici de sessió----- -->
+
+<div class="row">
+
+    <div class="col-lg-11 maincontent">
+        <div class="col-xs-1" align="center" id="titol">Biblioteca
+        </div>
+
+        {% if ultimes_curiositats %}
+            {% for curiositat in ultimes_curiositats %}
+                <a href="/curiositat/{{ curiositat.id }}">
+                <div class="col-xs-1 contingutbiblioteca row" align="center" id="titol">
+                        <div class="col-lg-3 curiositat imatgeelement" align="left">
+                            <img src="../media/{{ curiositat.imatge }}" class="imageelement">
+                        </div>
+                        <div class="col-lg-9 curiositat textelement" align="left">
+                            {{ curiositat.titol }}
+                        </div>
+
+                </div>
+                </a>
+                <hr>
+            {% endfor %}
+        {% else %}
+            <h2>No hi ha curiositats</h2>
+        {% endif %}
+
+    </div>
+
+
+</div>
+
+<!-- ---------------------------------------FOOTER------------------------------------ -->
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo myfooter ">
+
+    <table style="width:100%; color: white; text-align: center">
+        <tr class="navtext">
+            <td colspan="2" id="textnav">Llocs d'interés</td>
+            <td colspan="2" id="textnav">Xarxes</td>
+        </tr>
+        <tr>
+            <td><a class="nav-link" href="{% url 'Index' %}">Inici</a></td>
+            <td><a class="nav-link" href="#">Qui som?</a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/facebook_2.png" class="imagefooter"></a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/youtube.png" class="imagefooter"></a></td>
+        </tr>
+        <tr>
+            <td><a class="nav-link" href="#">Ranking</a></td>
+            <td><a class="nav-link" href="{% url 'login' %}">Inicia sessió</a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/instagram.png" class="imagefooter"></a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/google_plus.png" class="imagefooter"></a></td>
+        </tr>
+        <tr>
+            <td><a class="nav-link" href="{% url 'biblioteca' %}">Biblioteca</a></td>
+            <td><a class="nav-link" href="{% url 'registre' %}">Registra't</a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/twitter.png" class="imagefooter"></a></td>
+            <td><a href="#!"><img src="../media/IKONS/IKONS/PNG/64/pinterest_1.png" class="imagefooter"></a></td>
+        </tr>
+    </table>
+
+    <!-- Copyright -->
+    <table style="width:100%; color: white; text-align: center" class="wap">
+        <tr>
+            <td colspan="2"><input type=image src="../media/Images/websalpunt.png" width="auto" height="100"></td>
+            <td colspan="2"><input type=image src="../media/Images/dina%20hosting.png" width="auto" height="50"></td>
+        </tr>
+
+        <!-- Copyright -->
+    </table>
+    <div class="footer-copyright text-center py-3 titolfooter">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+                alt="Llicència de Creative Commons" style="border-width:0"
+                src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a>
+    </div>
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
