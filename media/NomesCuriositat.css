@@ -1,0 +1,397 @@
+
+body{
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 
+}
+ 	
+::placeholder {
+    font-family: "nav";
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+#titol{
+    font-family: "titol";
+    font-size: 50px;
+    color: aliceblue;
+}
+@font-face{
+    font-family: 'titol';
+    src: url("Fonts/BebasNeue-Regular.otf");
+}
+@font-face{
+    font-family: 'nav';
+    src: url("Fonts/Quotable (Italic) Font by 7NTypes.otf");
+}
+@font-face{
+    font-family: 'text';
+    src: url("Fonts/LiberationSans-Bold.ttf");
+}
+.navbar a:hover{
+     color: indianred!important;
+}
+#textnav{
+    font-family: "nav";
+    font-size: 20px;
+}
+.maincontent{
+    background: rgba(109, 0, 0, 0.5);
+    color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkred;
+    margin-left:5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.biblioteca{
+    background: rgba(3, 15, 35, 0.5);
+    margin: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+}
+.row{
+    width: 100%;
+}
+.carrusel{
+    margin: 10px;
+    float: right;
+    height: auto;
+    width: 50%;
+}
+.contingutcuriositat{
+    display: flex;
+}
+footer{
+    width: 100%;
+}
+.myfooter{
+    bottom: 0;
+    
+    background: rgba(0, 0, 0, 0.7);
+}
+.titolfooter{
+    color: white;
+}
+.textfooter{
+    color: black;
+}
+.imagefooter{
+    width: 35px;
+    height: auto;
+    transition: border-radius ease 0.3s;
+}
+.imagefooter:hover{
+    border-radius: 50%;
+}
+a:hover{
+    color: skyblue;
+}
+td{
+
+    width: 25%;
+}
+.vots{
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+}
+.wap{
+    margin-top: 25px;
+}
+#biblioteca{
+    font-family: "nav";
+    font-size: 50px;
+    color: aliceblue;
+}
+/* CSS SEARCH */
+
+
+    .searchbar{
+    height: 60px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    max-width: 90%; 
+    caret-color:darkslateblue;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: aliceblue;
+    color: darkslateblue;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+    .lupa{
+        width: 25px;
+        height: auto;
+    }
+
+
+/* CSS SEARCH */
+
+
+
+/* RANKING */
+
+#ranking td, #ranking th{
+    width: 33%;
+    text-align: center;
+}
+#ranking td:first-child, #ranking th:first-child{
+    width: 5%;
+    text-align: center;
+}
+#ranking{
+    width: 65%;
+}
+#trofeo{
+    width: 35px;
+    height: auto;
+}
+
+.mainimage{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkred;
+    width: 75%;
+}
+p{
+    text-align: justify;
+    font-family: "text";
+    font-size: 20px;
+}
+@media only screen and (max-width: 480px){
+    body{
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 
+}
+ 	
+::placeholder {
+    font-family: "nav";
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+#titol{
+    font-family: "titol";
+    font-size: 50px;
+    color: aliceblue;
+}
+@font-face{
+    font-family: 'titol';
+    src: url("Fonts/BebasNeue-Regular.otf");
+}
+@font-face{
+    font-family: 'nav';
+    src: url("Fonts/Quotable (Italic) Font by 7NTypes.otf");
+}
+@font-face{
+    font-family: 'text';
+    src: url("Fonts/LiberationSans-Bold.ttf");
+}
+.navbar a:hover{
+     color: indianred!important;
+}
+#textnav{
+    font-family: "nav";
+    font-size: 20px;
+}
+.maincontent{
+    background: rgba(109, 0, 0, 0.5);
+    color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkred;
+    margin-left:5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.biblioteca{
+    background: rgba(3, 15, 35, 0.5);
+    margin: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+}
+.row{
+    width: 100%;
+}
+.carrusel{
+    margin: 10px;
+    float: right;
+    height: auto;
+    width: 50%;
+}
+.contingutcuriositat{
+    display: flex;
+}
+footer{
+    width: 100%;
+}
+.myfooter{
+    bottom: 0;
+    
+    background: rgba(0, 0, 0, 0.7);
+}
+.titolfooter{
+    color: white;
+}
+.textfooter{
+    color: black;
+}
+.imagefooter{
+    width: 35px;
+    height: auto;
+    transition: border-radius ease 0.3s;
+}
+.imagefooter:hover{
+    border-radius: 50%;
+}
+a:hover{
+    color: skyblue;
+}
+td{
+
+    width: 25%;
+}
+.vots{
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+}
+.wap{
+    margin-top: 25px;
+}
+#biblioteca{
+    font-family: "nav";
+    font-size: 50px;
+    color: aliceblue;
+}
+/* CSS SEARCH */
+
+
+    .searchbar{
+    height: 60px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    max-width: 90%; 
+    caret-color:darkslateblue;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: aliceblue;
+    color: darkslateblue;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+    .lupa{
+        width: 25px;
+        height: auto;
+    }
+
+
+/* CSS SEARCH */
+
+
+
+/* RANKING */
+
+#ranking td, #ranking th{
+    width: 33%;
+    text-align: center;
+}
+#ranking td:first-child, #ranking th:first-child{
+    width: 5%;
+    text-align: center;
+}
+#ranking{
+    width: 65%;
+}
+#trofeo{
+    width: 35px;
+    height: auto;
+}
+
+.mainimage{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkred;
+    width: 75%;
+}
+p{
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-align: left;
+    font-family: "text";
+}
+}

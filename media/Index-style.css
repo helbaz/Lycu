@@ -1,0 +1,574 @@
+body{
+    background-image: url(Images/Background.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+::placeholder {
+    font-family: "nav";
+}
+p{
+    margin-top: 5px;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+#titol{
+    font-family: "titol";
+    font-size: 50px;
+    color: aliceblue;
+}
+@font-face{
+    font-family: 'titol';
+    src: url("Fonts/BebasNeue-Regular.otf");
+}
+@font-face{
+    font-family: 'nav';
+    src: url("Fonts/Quotable (Italic) Font by 7NTypes.otf");
+}
+.navbar a:hover{
+     color: skyblue!important;
+}
+#textnav{
+    font-family: "nav";
+    font-size: 20px;
+}
+.curiositat{
+    background: rgba(3, 15, 35, 0.5);
+    color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+    margin: 25px;
+}
+.biblioteca{
+    background: rgba(3, 15, 35, 0.5);
+    margin: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+}
+.row{
+    width: 100%;
+}
+.carrusel{
+    margin: 10px;
+    float: right;
+    height: auto;
+    width: 50%;
+}
+.contingutcuriositat{
+    display: flex;
+}
+.myfooter{
+    background: rgba(0, 0, 0, 0.7);
+}
+.titolfooter{
+    color: white;
+}
+.textfooter{
+    color: black;
+}
+.imagefooter{
+    width: 35px;
+    height: auto;
+    transition: border-radius ease 0.3s;
+}
+.imagefooter:hover{
+    border-radius: 50%;
+}
+a:hover{
+    color: skyblue;
+}
+td{
+
+    width: 25%;
+}
+.vots{
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    border-width: 2px;  
+}
+.autor{
+    font-family: "titol";
+    font-size: 20px;
+}
+.wap{
+    margin-top: 25px;
+}
+#biblioteca{
+    font-family: "nav";
+    font-size: 50px;
+    color: aliceblue;
+}
+/* CSS SEARCH */
+
+
+    .searchbar{
+    height: 60px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    max-width: 90%; 
+    caret-color:darkslateblue;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: aliceblue;
+    color: darkslateblue;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+    .lupa{
+        width: 25px;
+        height: auto;
+    }
+.usercoment{
+    border-radius: 7%;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    margin-left: 50px;
+}
+.comentari{
+    margin: auto;
+    height: 65px;
+    width: 86%;
+    resize: none !important;
+}
+.blockcoment{
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+.botoenviar{
+    margin: auto;
+}
+.caixacomentaris{
+    background: rgba(124, 158, 214, 0.3);
+    color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.contenidorcomentaris{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.ikoncomentari{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.historialcomentari{
+    background: rgba(3, 15, 35, 0.5);
+    margin-left: 20px;
+    width: 85%;
+    border-radius: 15px;
+}
+hr{
+    border-style: solid;
+    border-color: white;
+}
+.autorcomentari{
+    font-size: 12px;
+    width: 35%;
+    margin: 10px;
+}
+.comentariescrit{
+    margin: 10px;
+}
+#comentaris{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-family: "nav";
+    font-size: 50px;
+    color: aliceblue;
+}
+.curiositatbiblio{
+    width: 92%;
+    margin: auto;
+    margin-top: 30px;
+}
+#titolbiblio{
+    margin-top: 15px;
+    font-family: "titol";
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.curiositatbiblio:hover{
+    transition: width ease 0.6s;
+    width: 100%;
+}
+.imagebiblio{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 991px){
+    body{
+    background-image: url(Images/Background.jpg);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    }
+    
+    ::placeholder {
+        font-family: "nav";
+    }
+
+    #logo{
+        height: 50px;
+        width: auto;
+    }
+    #titol{
+        font-family: "titol";
+        font-size: 50px;
+        color: aliceblue;
+    }
+    @font-face{
+        font-family: 'titol';
+        src: url("Fonts/BebasNeue-Regular.otf");
+    }
+    @font-face{
+        font-family: 'nav';
+        src: url("Fonts/Quotable (Italic) Font by 7NTypes.otf");
+    }
+    .navbar a:hover{
+         color: skyblue!important;
+    }
+    #textnav{
+        font-family: "nav";
+        font-size: 20px;
+    }
+    .curiositat{
+        background: rgba(3, 15, 35, 0.5);
+        color: aliceblue;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightblue;
+        margin: 25px;
+        margin-left: 50px;
+    }
+    .biblioteca{
+        background: rgba(3, 15, 35, 0.5);
+        margin: 2%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightblue;
+        margin-left: 40px;
+        margin-bottom: 25px;
+    }
+    .row{
+        width: 100%;
+    }
+    .carrusel{
+        margin: 10px;
+        float: right;
+        height: auto;
+        width: 95%;
+    }
+    .contingutcuriositat{
+        display: flex;
+    }
+    .myfooter{
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .titolfooter{
+        color: white;
+    }
+    .textfooter{
+        color: black;
+    }
+    .imagefooter{
+        width: 35px;
+        height: auto;
+        transition: border-radius ease 0.3s;
+    }
+    .imagefooter:hover{
+        border-radius: 50%;
+    }
+    a:hover{
+        color: skyblue;
+    }
+    td{
+
+        width: 25%;
+    }
+    .vots{
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+        border-width: 1px;
+    }
+    .wap{
+        margin-top: 25px;
+    }
+    #biblioteca{
+        font-family: "nav";
+        font-size: 50px;
+        color: aliceblue;
+    }
+/* CSS SEARCH */
+
+
+    .searchbar{
+    height: 60px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    /*transition: width 0.4s linear;*/
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    max-width: 90%;
+    /*transition: width 0.4s linear;*/
+    }
+
+    .searchbar:hover > .search_icon{
+    background: aliceblue;
+    color: darkslateblue;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+    .lupa{
+        width: 25px;
+        height: auto;
+    }
+}
+.usercoment{
+    border-radius: 7%;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.ikoncomentari{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;  
+}
+/*Media query iPad*/
+ @media only screen and (min-width: 992px) and (max-width: 1169px){
+   body{
+    background-image: url(Images/Background.jpg);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    }
+
+    ::placeholder {
+        font-family: "nav";
+    }
+
+    #logo{
+        height: 50px;
+        width: auto;
+    }
+    #titol{
+        font-family: "titol";
+        font-size: 50px;
+        color: aliceblue;
+    }
+    @font-face{
+        font-family: 'titol';
+        src: url("Fonts/BebasNeue-Regular.otf");
+    }
+    @font-face{
+        font-family: 'nav';
+        src: url("Fonts/Quotable (Italic) Font by 7NTypes.otf");
+    }
+    .navbar a:hover{
+         color: skyblue!important;
+    }
+    #textnav{
+        font-family: "nav";
+        font-size: 20px;
+    }
+    .curiositat{
+        background: rgba(3, 15, 35, 0.5);
+        color: aliceblue;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightblue;
+        margin: 25px;
+        margin-left: 190px;
+    }
+    .biblioteca{
+        background: rgba(3, 15, 35, 0.5);
+        margin: 2%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightblue;
+        flex: none !important;
+        max-width: 100% !important;
+        width: 67%;
+        margin-left: 190px;
+        margin-bottom: 25px;
+    }
+    .row{
+        width: 100%;
+    }
+    .carrusel{
+        margin: 10px;
+        float: right;
+        height: auto;
+        width: 95%;
+    }
+    .contingutcuriositat{
+        display: flex;
+    }
+    .myfooter{
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .titolfooter{
+        color: white;
+    }
+    .textfooter{
+        color: black;
+    }
+    .imagefooter{
+        width: 35px;
+        height: auto;
+        transition: border-radius ease 0.3s;
+    }
+    .imagefooter:hover{
+        border-radius: 50%;
+    }
+    a:hover{
+        color: skyblue;
+    }
+    td{
+
+        width: 25%;
+    }
+    .vots{
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+        border-width: 2px;
+    }
+    .wap{
+        margin-top: 25px;
+    }
+    #biblioteca{
+        font-family: "nav";
+        font-size: 50px;
+        color: aliceblue;
+    }
+    /* CSS SEARCH */
+
+
+    .searchbar{
+    height: 60px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    /*caret-color:transparent;*/
+    line-height: 40px;
+    /*transition: width 0.4s linear;*/
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    max-width: 90%; 
+    caret-color:darkslateblue;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: aliceblue;
+    color: darkslateblue;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+    .lupa{
+        width: 25px;
+        height: auto;
+    }
+
+}
